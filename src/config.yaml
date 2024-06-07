@@ -1,0 +1,43 @@
+source_dir: "data/dataset"
+data_dir: "data/preprocessed/"
+target_dir: "data/save/"
+dirname: "data/nlpcc_data"
+bert_path: "bert-base-chinese"
+CLS: "[CLS]"
+SEP: "[SEP]"
+PAD: "[PAD]"
+UNK: "[UNK]"
+batch_size: 1
+max_length: 128
+learning_rate: 3e-5
+patience: 5
+max_grad_norm: 1.0
+fp16: "nouse"
+pair: "use"
+loss_scale: 0
+warmup_proportion: 0.1
+gradient_accumulation_steps: 1
+adam_epsilon: 1e-8
+warmup_steps: 0
+fp16_opt_level: "O1"
+epoch_size: 50
+embedding_size: 200
+hidden_size: 300
+output_size: 2
+trans_json_data_dir: "../data/dataset/all_json"
+trans_json_target_dir: "../data/dataset/"
+max_seq_length: 128
+min_freq: 1
+pos_emb_size: 10
+sememe_emb_size: 100
+
+# special_token: ['\ufeff']
+special_token:
+  - "\ufeff"
+  - "\u3000"
+  - "\xa0"
+  - "\u200b"
+  - "\t"
+  - "\u200c"
+
+bio_list: "OBI"

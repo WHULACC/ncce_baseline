@@ -1,0 +1,8 @@
+torch==1.12.1
+python_box
+tqdm
+loguru
+transformers
+numpy
+PyYAML
+scipy
