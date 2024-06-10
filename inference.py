@@ -85,7 +85,7 @@ class Pipeline:
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('--cuda', default=1)
+    parser.add_argument('--cuda', default=0)
     parser.add_argument('--chk', '--checkpoint', default='best_12.pth.tar', type=str, help="checkpoint path: ./data/save/xxx")
     args = parser.parse_args()
     pipeline = Pipeline(args)
