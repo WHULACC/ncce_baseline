@@ -72,7 +72,7 @@ The prediction results will be saved in the `data/submit/submit.jsonl` file.
 ## Submission
 
 After obtaining the prediction results, you can zip the `submit.jsonl` file and
-upload the zippped file to the competition platform to obtain your score.
+upload the zippped file to the [competition platform](https://www.codabench.org/competitions/3179/) to obtain your score.
 
 ## License
 
